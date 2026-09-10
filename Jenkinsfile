@@ -67,7 +67,7 @@ pipeline {
                     docker ps
 
                     echo "Testing application:"
-                    curl -f http://localhost:5003
+                    curl -f http://localhost:5000
 
                     echo ""
                     echo "Application is running successfully!"
