@@ -9,12 +9,12 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/python-cicd-app.git'
-            }
-        }
+//        stage('Checkout') {
+  //          steps {
+    //            git branch: 'main',
+      //              url: 'https://github.com/YOUR_USERNAME/python-cicd-app.git'
+        //    }
+      //  }
 
         stage('Run Tests') {
             steps {
