@@ -52,7 +52,7 @@ pipeline {
                 sh '''
                     docker run -d \
                         --name ${CONTAINER_NAME} \
-                        -p 5000:5000 \
+                        -p 5003:5000 \
                         ${IMAGE_NAME}:latest
                 '''
             }
@@ -67,7 +67,7 @@ pipeline {
                     docker ps
 
                     echo "Testing application:"
-                    curl -f http://localhost:5000
+                    curl -f http://localhost:5003
 
                     echo ""
                     echo "Application is running successfully!"
